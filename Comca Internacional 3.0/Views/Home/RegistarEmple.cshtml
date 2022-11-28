@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>RegistarEmple</title>
+</head>
+<body>
+    <div>
+        <h3>Registro realizado correctamente</h3>
+        <!-- Indicates caution should be taken with this action -->
+        @using (Html.BeginForm("Recursos_Humanos","Home"))
+        {
+            <button type="submit" class="btn btn-warning">Regresar</button>
+        }
+
+
+    </div>
+</body>
+</html>
