@@ -84,3 +84,40 @@ C:\Users\Mauricio\source\repos\Comca Internacional 3.0\Comca Internacional 3.0\o
 C:\Users\Mauricio\source\repos\Comca Internacional 3.0\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CopyComplete
 C:\Users\Mauricio\source\repos\Comca Internacional 3.0\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.dll
 C:\Users\Mauricio\source\repos\Comca Internacional 3.0\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.pdb
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Comca Internacional 3.0.dll.config
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Comca Internacional 3.0.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Comca Internacional 3.0.pdb
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Antlr3.Runtime.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Microsoft.Web.Infrastructure.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Newtonsoft.Json.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Helpers.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Mvc.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Optimization.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Razor.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.Deployment.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.Razor.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\WebGrease.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Helpers.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Mvc.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Optimization.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.Razor.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.Deployment.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\System.Web.WebPages.Razor.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Newtonsoft.Json.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Antlr3.Runtime.pdb
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.Helpers.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.Mvc.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.Optimization.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.Razor.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.WebPages.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.WebPages.Deployment.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\bin\es\System.Web.WebPages.Razor.resources.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.AssemblyReference.cache
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CoreCompileInputs.cache
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CopyComplete
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.dll
+E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.pdb
