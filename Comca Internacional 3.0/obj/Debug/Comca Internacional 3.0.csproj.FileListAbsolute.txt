@@ -121,3 +121,89 @@ E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Interna
 E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CopyComplete
 E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.dll
 E:\Archivos Visual Studio\GitHub\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.pdb
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Comca Internacional 3.0.dll.config
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Comca Internacional 3.0.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Comca Internacional 3.0.pdb
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csc.exe
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csc.exe.config
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csc.rsp
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csi.exe
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csi.exe.config
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\csi.rsp
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.AppContext.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Collections.Immutable.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Console.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Globalization.Calendars.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.IO.Compression.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.IO.FileSystem.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Net.Http.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Net.Sockets.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Reflection.Metadata.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.ValueTuple.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Xml.XPath.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\vbc.exe
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\vbc.exe.config
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\vbc.rsp
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\VBCSCompiler.exe
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\roslyn\VBCSCompiler.exe.config
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Antlr3.Runtime.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Microsoft.Web.Infrastructure.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Newtonsoft.Json.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Helpers.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Mvc.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Optimization.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Razor.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.Deployment.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.Razor.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\WebGrease.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Helpers.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Mvc.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Optimization.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.Razor.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.Deployment.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\System.Web.WebPages.Razor.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Newtonsoft.Json.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Antlr3.Runtime.pdb
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.Helpers.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.Mvc.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.Optimization.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.Razor.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.WebPages.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.WebPages.Deployment.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\bin\es\System.Web.WebPages.Razor.resources.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.AssemblyReference.cache
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CoreCompileInputs.cache
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.csproj.CopyComplete
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.dll
+E:\Archivos Visual Studio\GitHub\COMCA INTERNATIONAL\Comca Internacional 3.0\obj\Debug\Comca Internacional 3.0.pdb

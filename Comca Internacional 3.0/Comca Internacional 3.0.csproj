@@ -178,6 +178,7 @@
     <Content Include="Views\Home\Contabilidad.cshtml" />
     <Content Include="Views\Home\Recursos_Humanos.cshtml" />
     <Content Include="Views\Home\RegistarEmple.cshtml" />
+    <Content Include="Views\Home\Tecnologia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Comca Internacional 3.0",
+    "\\Comca Internacional 3.0\\Views",
+    "\\Comca Internacional 3.0\\Views\\Home"
   ],
-  "SelectedNode": "\\E:\\Archivos Visual Studio\\GitHub",
+  "SelectedNode": "\\Comca Internacional 3.0\\Views\\Home\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

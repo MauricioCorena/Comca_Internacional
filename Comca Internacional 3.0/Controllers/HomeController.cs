@@ -23,13 +23,9 @@ namespace Comca_Internacional_3._0.Controllers
         {
             return View();
         }
-
-        [Authorize]
-        [PermisosRol(Rol.Administrador)]
+        
         public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
+        {            
             return View();
         }
 
@@ -64,6 +60,12 @@ namespace Comca_Internacional_3._0.Controllers
         public ActionResult Contabilidad()
         {
             return View();  
+        }
+        [Authorize]
+        [PermisosRol(Rol.Administrador)]
+        public ActionResult Tecnologia()
+        {
+            return View();
         }
 
         [Authorize]
