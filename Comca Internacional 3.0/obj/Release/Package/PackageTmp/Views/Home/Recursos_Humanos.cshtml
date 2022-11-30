@@ -1,0 +1,491 @@
+﻿@model Comca_Internacional_3._0.Models.Empleados
+
+@{
+    ViewBag.Title = "Recursos_Humanos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div class="">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bhoechie-tab-menu">
+        <div class="list-group">
+            <a href="#" class="list-group-item active text-center">
+                <h4 class="glyphicon glyphicon-dashboard"></h4><br />Control Asistencia
+            </a>
+            <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-user"></h4><br />Empleados
+            </a>
+            <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-plus-sign"></h4><br />Extras al salario
+            </a>
+            <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-heart-empty"></h4><br />Incapacidades
+            </a>
+            <a href="#" class="list-group-item text-center">
+                <h4 class="glyphicon glyphicon-edit"></h4><br />Permisos
+            </a>
+        </div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 bhoechie-tab">
+        <!-- CONTROL DE ASISTENCIAS -->
+        <div class="bhoechie-tab-content active" style="background-color: #EDEDED;">
+            <center>
+                <h3>CONTROL ASISTENCIA </h3>
+                <table class="display compact" id="Lista_Asistencia" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>DUI</th>
+                            <th>Nombre</th>
+                            <th>Fecha</th>
+                            <th>Hora Entrada</th>
+                            <th>Hora Salida</th>
+                            <th>Rutina</th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </center>
+        </div>
+        <!-- CONTROL DE EMPLEADOS  -->
+        <div class="bhoechie-tab-content" style="background-color: #EDEDED;">
+            <center>
+                <h4 style="color:#55518a">LISTA DE EMPLEADOS</h4>
+                <form method="post" action="/Home/RegistarEmple">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="modal fade" id="FormModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title">Registrar Empleado</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.DUI, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.DUI, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("DUI", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.FechaNacimiento, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.FechaNacimiento, new { @class = "form-control", type = "date" })
+                                                    @Html.ValidationMessage("FechaNacimiento", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.IdTipoEmp, new { @class = "control-label" })
+                                                    @Html.DropDownListFor(modal => modal.IdTipoEmp, new List<SelectListItem>
+                                                    {
+                                                        new SelectListItem {Text="Activo" , Value="1"},
+                                                        new SelectListItem {Text="Inactivo" , Value="2"},
+                                                    }, "Selecione Estado", (new { @class = "form-control" }))
+                                                    @Html.ValidationMessage("Puesto", new { @class = "text-danger" })
+                                                    @Html.ValidationMessage("IdTipoEmp", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Nombre, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.Nombre, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("Nombre", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Apellidos, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.Apellidos, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("Apellidos", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Telefono, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.Telefono, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("Telefono", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Direccion, new { @class = "control-label" })
+                                                    @Html.TextAreaFor(modal => modal.Direccion, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("Direccion", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.FechaContratacion, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.FechaContratacion, new { @class = "form-control", Type = "date" })
+                                                    @Html.ValidationMessage("FechaContratacion", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Puesto, new { @class = "control-label" })
+                                                    @Html.DropDownListFor(modal => modal.Puesto, new List<SelectListItem>
+                                                    {
+                                                    new SelectListItem {Text="Supervisor de Agencia" , Value="AC001"},
+                                                    new SelectListItem {Text="Agente Maritimo" , Value="AC002"},
+                                                    new SelectListItem {Text="Agente Terrestre" , Value="AC003"},
+                                                    new SelectListItem {Text="Agente Aereo" , Value="AC004"},
+                                                    new SelectListItem {Text="Supervisor de Amidministracion" , Value="Adm001"},
+                                                    new SelectListItem {Text="Auxiliar Administrativo" , Value="Adm002"},
+                                                    new SelectListItem {Text="Supervisor de RRHH" , Value="RH001"},
+                                                    new SelectListItem {Text="Supervisor Contabilidad" , Value="CN001"},
+                                                    new SelectListItem {Text="Supervisor Informatica" , Value="TI001"},
+                                                    }, "Selecione Puesto", (new { @class = "form-control" }))
+                                                    @Html.ValidationMessage("Puesto", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    @Html.LabelFor(modal => modal.Sueldo, new { @class = "control-label" })
+                                                    @Html.TextBoxFor(modal => modal.Sueldo, new { @class = "form-control" })
+                                                    @Html.ValidationMessage("Sueldo", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary">Registrar</button>
+                                    </div>
+                                </div><!-- /.modal-content -->
+                            </div><!-- /.modal-dialog -->
+                        </div><!-- /.modal -->
+                    }
+
+                </form>
+                <table class="display" id="tb_empleados" style="width:100%;">
+                    <thead>
+                        <tr>
+                            <th>DUI </th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Direccion</th>
+                            <th>Tel</th>
+                            <th>Estado</th>
+                            <th>F. Nan</th>
+                            <th>Puesto</th>
+                            <th>F. Contra.</th>
+                            <th>Sueldo</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Total :</th>
+                            <th></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </center>
+        </div>
+
+        <!-- CONTROL DE EXTRAS AL SALARIO-->
+        <div class="bhoechie-tab-content" style="background-color: #EDEDED;">
+            <center>
+                <form method="post" action="/Home/LsEmpleados">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="modal-dialog" style=" margin: 30px 7px 2px 4px">
+                            <div class="card mx-3 mt-n5 shadow-lg" style="border-radius: 10px; border-left: 8px #007bff solid; border-right: solid; border-top: none; border-bottom: none; width: 60rem;">
+                                <div class="card-body">
+                                    <div class="modal-header">
+                                        <h4 class="card-title mb-3 text-primary text-uppercase">Horas extras y bonos:</h4>
+                                    </div>
+                                    <div class="row" style="margin: 10px 0px 0px 0px">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.DUI, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.DUI, new { @class = "form-control" })
+                                                @Html.ValidationMessage("DUI", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.Nombre, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.Nombre, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Nombre", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.fecha, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.fecha, new { @class = "form-control", Type = "date" })
+                                                @Html.ValidationMessage("fecha", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.CantidadBono, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.CantidadBono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Cantidad", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.bono, new { @class = "control-label" })
+                                                @Html.TextAreaFor(modal => modal.bono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("bono", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    &nbsp;
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </form>
+            </center>
+        </div>
+        <!-- CONTROL DE INCAPACIDADES-->
+        <div class="bhoechie-tab-content" style="background-color: #EDEDED;">
+            <center>
+                <h1 style="color:#55518a">INCAPACIDADES</h1>
+                <form method="post" action="/Home/LsEmpleados">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="modal-dialog" style=" margin: 30px 7px 2px 4px">
+                            <div class="card mx-3 mt-n5 shadow-lg" style="border-radius: 10px; border-left: 15px #EEF107 solid; border-right:solid ; border-top: none; border-bottom: none; width: 60rem;">
+                                <div class="card-body">
+                                    <div class="row" style="margin: 10px 0px 0px 0px">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.DUI, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.DUI, new { @class = "form-control" })
+                                                @Html.ValidationMessage("DUI", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.Nombre, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.Nombre, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Nombre", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.fecha, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.fecha, new { @class = "form-control", Type = "date" })
+                                                @Html.ValidationMessage("fecha", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.CantidadBono, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.CantidadBono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Cantidad", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.bono, new { @class = "control-label" })
+                                                @Html.TextAreaFor(modal => modal.bono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("bono", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    &nbsp;
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </form>
+            </center>
+        </div>
+        <!-- CONTROL DE PERMISOS-->
+        <div class="bhoechie-tab-content" style="background-color: #EDEDED;">
+            <center>
+                <h1 style="color:#55518a">PERMISOS DE EMPLEADOS</h1>
+                <form method="post" action="/Home/LsEmpleados">
+                    @using (Html.BeginForm())
+                    {
+                        <div class="modal-dialog" style=" margin: 30px 7px 2px 4px">
+                            <div class="card mx-3 mt-n5 shadow-lg" style="border-radius: 10px; border-left: 10px #22B5D3 solid; border-right: solid; border-top: none; border-bottom: none; width: 60rem; ">
+                                <div class="card-body">
+                                    <div class="row" style="margin: 10px 0px 0px 0px">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.DUI, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.DUI, new { @class = "form-control" })
+                                                @Html.ValidationMessage("DUI", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.Nombre, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.Nombre, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Nombre", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.fecha, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.fecha, new { @class = "form-control", Type = "date" })
+                                                @Html.ValidationMessage("fecha", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.CantidadBono, new { @class = "control-label" })
+                                                @Html.TextBoxFor(modal => modal.CantidadBono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("Cantidad", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="form-group">
+                                                @Html.LabelFor(modal => modal.bono, new { @class = "control-label" })
+                                                @Html.TextAreaFor(modal => modal.bono, new { @class = "form-control" })
+                                                @Html.ValidationMessage("bono", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    &nbsp;
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-primary">Registrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                </form>
+            </center>
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script>
+    $(document).ready(function () {
+        $('#Lista_Asistencia').DataTable({
+            "ajax": {
+                "url": '@Url.Action("ListaAsistencia", "Home")',
+                "type": "GET",
+                "datatype": "json",
+            },
+            "columns": [
+                {"data": "IdAsistencia"},
+                { "data": "DUI" },
+                { "data": "Nombre" },
+                { "data": "fecha" },
+                { "data": "HoraEntrada" },
+                { "data": "HoraSalida" },
+                { "data": "Rutina" }
+            ],
+            "language":{
+                url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+            },
+            dom:"Bfrtip",
+            buttons: [
+                {
+                extend : "excelHtml5",
+                text: "Exportar Excel",
+                filename: "Lista de Empleados Comca",
+                className: "btb-Excel"
+                },
+
+                {
+                    extend: "pdfHtml5",
+                    text: "Exportar PDF",
+                    filename: "Lista de Empleados Comca",
+                    orientation: 'landscape',
+                    className : "btn-pdf"
+                },
+                "pageLength"
+            ]
+        });
+    });
+
+        //Tabla de Listado de empleados Scripts
+         $(document).ready(function () {
+        $('#tb_empleados').DataTable({
+            "drawCallback": function () {
+                var api = this.api();
+
+                $(api.column(9).footer()).html(
+                    api.column(9, { page: 'current' }).data().sum()
+                )
+            },
+            "ajax": {
+                "url": '@Url.Action("ListaEmpleados", "Home")',
+                "type": "GET",
+                "datatype": "json",
+            },
+            "columns": [
+                {"data": "DUI"},
+                { "data": "Nombre" },
+                { "data": "Apellidos" },
+                { "data": "Direccion" },
+                { "data": "Telefono" },
+                { "data": "IdTipoEmp" },
+                { "data": "FechaNacimiento" },
+                { "data": "Puesto" },
+                { "data": "FechaContratacion" },
+                { "data": "Sueldo" },
+
+            ],
+            "language":{
+                url: "https://cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json"
+            },
+            dom:"Bfrtip",
+            buttons: [
+                {
+                    text: 'Agregar Nuevo',
+                    action: function (e, dt, node, config) {
+                        abrirModal(0)
+                    },
+                    className : "btn-nuevo"
+                },
+                {
+                extend : "excelHtml5",
+                text: "Exportar Excel",
+                filename: "Lista de Empleados Comca",
+                className: "btb-Excel"
+                },
+
+                {
+                    extend: "pdfHtml5",
+                    text: "Exportar PDF",
+                    filename: "Lista de Empleados Comca",
+                    orientation: 'landscape',
+                    className : "btn-pdf"
+                },
+                {
+                    extend: "print",
+                    className : "btn-print"
+                },
+                "pageLength"
+            ]
+        });
+    });
+        function abrirModal() {
+            $('#FormModal').modal('show');
+        }
+         //Tabla de Listado de empleados Scripts ---- FIN
+    </script>
+}
+
