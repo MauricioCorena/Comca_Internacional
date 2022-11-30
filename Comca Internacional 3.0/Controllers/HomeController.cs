@@ -12,12 +12,13 @@ using System.Web.Security;
 using Comca_Internacional_3._0.Models;
 using Comca_Internacional_3._0.Permisos;
 
+
 namespace Comca_Internacional_3._0.Controllers
 {
   
     public class HomeController : Controller
     {
-        [Authorize]
+        //[Authorize (Roles= "Administrador, Tecnologia, Recursos_Humanos")]
         public ActionResult Index()
         {
             return View();
@@ -94,7 +95,7 @@ namespace Comca_Internacional_3._0.Controllers
             List<Asistencia> ListaA = new List<Asistencia>();
 
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
 
                 try
@@ -162,7 +163,7 @@ namespace Comca_Internacional_3._0.Controllers
 
 
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
 
                 try
@@ -206,7 +207,7 @@ namespace Comca_Internacional_3._0.Controllers
             List<Planilla> ListaA = new List<Planilla>();
 
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
 
                 try
@@ -293,7 +294,7 @@ namespace Comca_Internacional_3._0.Controllers
         {
             List<Empleados> Lista = new List<Empleados>();
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
                 try
                 {

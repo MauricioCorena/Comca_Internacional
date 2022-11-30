@@ -16,7 +16,7 @@ namespace Comca_Internacional_3._0.Logica
             Usuarios objeto = new Usuarios();
 
 
-            using (SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection conexion = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
 
                 string query = "select Nombre,Correo,Clave,IdRol from USUARIOS where Correo = @pcorreo and Clave = @pclave";

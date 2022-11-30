@@ -18,7 +18,7 @@ namespace Comca_Internacional_3._0.Models
 
             //Conexion con la base de datos
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
                 con.Open();
 
@@ -73,7 +73,7 @@ namespace Comca_Internacional_3._0.Models
         {
             int i = 0;
             //Conexion con la base de datos
-            using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-N4FU29D\\SQLEXPRESS; Initial Catalog=Comca Internacional; Integrated Security=true"))
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
             {
                 try
                 {
@@ -103,8 +103,9 @@ namespace Comca_Internacional_3._0.Models
         public int AgregarIncapacidad(Incapacidades PerInca)
         {
             //Conexion con la base de datos
-            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString);
-            con.Open();
+            using (SqlConnection con = new SqlConnection("Data Source=comca.database.windows.net ;Initial Catalog=Comcam;Persist Security Info=True;User ID=mauricioc;Password=Crow2549762015"))
+            {    
+                con.Open();
 
             SqlCommand cmd = new SqlCommand("sp_registro_incapacidad", con);
             cmd.CommandType = CommandType.StoredProcedure;
@@ -120,6 +121,7 @@ namespace Comca_Internacional_3._0.Models
             con.Close();
 
             return i;
+        }
         }
 
     }
